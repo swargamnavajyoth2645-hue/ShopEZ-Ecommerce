@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --brand-purple: #4f46e5;     /* Main Indigo Navbar Color */
+  --brand-purple-hover: #4338ca;
+  --bg-light: #f9fafb;         /* Light gray background for storefront */
+  --surface: #ffffff;
+  --text-dark: #111827;
+  --text-gray: #6b7280;
+  --border-light: #e5e7eb;
+  
+  /* Admin Dark Theme Variables */
+  --admin-bg: #1f2937;
+  --admin-surface: #111827;
+  --admin-text: #f3f4f6;
+  --admin-accent: #f59e0b;     /* Orange/Yellow accent from screenshot */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade { animation: fadeIn 0.4s ease-out forwards; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
